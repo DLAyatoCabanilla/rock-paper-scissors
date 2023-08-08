@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <script src="https://kit.fontawesome.com/c6771b9339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<body>
+    <script defer src="assets/script/main.js"></script>
+<!-- GAME, ICONS, CONTAINER -->
+  <div class="game-body " >
+    <span class="game-name" style="border-bottom: 1px solid gray;">Rock, Paper, Scissors, Shoot!!</span>
+    <div class="game-container d-flex column">
+
+      <div class="players">
+        <div style="border: 1px solid #0096c7; padding: 5px 20px; border-radius: 5px; color: #0096c7;" class="scoreWrapper">
+          <i class="avatar fa-solid fa-user"></i>
+          <span id="userScore" class="score">0</span>
+        </div>
+        <div class="result absolute" style="border: 1px solid white;padding: 5px 20px; border-radius: 10px; "><span id="result">PICK!</span></div>
+        <div  style="border: 1px solid #ef233c; padding: 5px 20px; border-radius: 5px; color: #ef233c;" class="scoreWrapper">
+          <i class="avatar fa-solid fa-robot"></i>
+          <span id="aiScore" class="score">0</span> 
+        </div>
+      </div>
+
+      <!-- userscore
+aiscore
+let socre1 = 0
+let socre2 = 0 -->
+
+
+      <div class="game-container-body icon-wrapper">
+        <div class="icons">
+          <i id="userDisplayRock" class="user-choice-display fa-solid fa-hand-back-fist"></i>
+          <i id="userDisplayPaper"  style="display: none;" class="user-choice-display fa-solid fa-hand"></i>
+          <i id="userDisplayScissors"  style="display: none;transform: rotate(90deg);" class="user-choice-display fa-solid fa-hand-scissors"></i>
+        </div>
+        <span class="versus text-shadow1 absolute">VS</span>
+        <div class="aicontainer">
+          <i id="aiDisplayRock" class="ai-choice-display fa-solid fa-hand-back-fist"></i>
+          <i id="aiDisplayPaper" style="display: none;" class="ai-choice-display fa-solid fa-hand"></i>
+          <i id="aiDisplayScissors"  style="display: none;" class="ai-choice-display fa-solid fa-hand-scissors "></i>
+        </div>
+      </div>
+      <!-- BUTTONS -->
+      <div class="game-container-footer ">
+        <div class="container-footer-left d-flex ">
+          <button id="userRock" class="user-choice-btn text-shadow1">
+            <i class="fa-solid fa-hand-back-fist "></i>
+          </button>
+          <button id="userPaper" class="user-choice-btn text-shadow1">
+            <i class="fa-solid fa-hand "></i>
+          </button>
+          <button id="userScissors" class="user-choice-btn text-shadow1">
+            <i class="fa-solid fa-hand-scissors  fa-rotate-90 "></i>
+          </button>
+        </div>
+        <button onclick="reloadPage()" id="reset" class="reset absolute text-shadow1">
+          <i class="fa-solid fa-arrows-spin fa-spin"></i>
+        </button>
+        <div class="container-footer-right d-flex">
+
+        </div>
+      </div>
+    </div>
+    <!-- Match History -->
+</div>
+<div class="history d-flex column" id="matchHistory">
+
+  <span id="matchHistoryHeader">MATCH HISTORY</span>
+<section class="head"><div>Youre Choice</div> <div>Result</div> <div>Ai choice</div> </section>
+</div>
+</body>
+</html>

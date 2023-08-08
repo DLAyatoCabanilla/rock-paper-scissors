@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Fasthand&family=Oswald:wght@500&family=Pacifico&family=Poppins:ital@0;1&family=Quattrocento:wght@700&family=Roboto+Condensed:wght@700&family=Work+Sans&display=swap');
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background: linear-gradient(to bottom right,#f72585,#7209b7);
+}
+
+.game-body {
+    background:radial-gradient(#264653,#3a0ca3) ;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.game-name {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.players {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+.game-container-body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #4cc9f0;
+    border-radius: 10px;
+    padding: 50px 0;
+}
+/*
+result
+*/
+.game-container .result {
+    left: 50%;
+    position: absolute;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+/* reslut */
+/* scoreWrapper */
+
+/* icon container */
+.icon-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 30px auto;
+}
+.icon-wrapper .versus {
+    display: block;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.icon-wrapper .icons   , .icon-wrapper .aicontainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 300px ;
+}  
+.icon-wrapper .icons  i , .aicontainer i{
+    font-size: 100px;
+    display: block;
+}
+/* icon container */
+.players .scoreWrapper {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.players .scoreWrapper i  {
+    font-size: 30px;
+}
+.players .scoreWrapper span {
+    font-size: 20px;
+}
+/* scoreWrapper */
+
+/* ame-contain-footer */
+.game-container-footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.game-container-footer i {
+    font-size: 55px;
+    cursor: pointer;
+}
+.game-container-footer #reset {
+    margin-left: 50px;
+}
+/* ame-container-footer */
+.icons {
+}
+.aicontainer {
+    position: relative;
+}
+#aiDisplayScissors {
+    position: absolute;
+    right: 120px;
+}
+
+.history {
+    border: 1px solid green;
+    width: 100% ;
+    max-width: 600px;
+    margin-top: 20px;
+    height: 320px;
+    min-height: 320px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    background-color: #4cc9f0;
+}
+.history #matchHistoryHeader {
+    order: -1;
+}
+.history .head {
+    display: grid;
+    grid-template-columns: auto 100px auto;
+    order: -1;
+}
+.history .head p {
+    text-align: center;
+}
+.history div {
+    display: grid;
+    margin-top: 10px;
+    position: relative;
+    grid-template-columns: auto 100px auto;
+}
+.history section div {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.history div {
+    height: 50px;
+    min-height: 50px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.history div  i {
+    /* width: 100%; */
+
+}
+.history div p {
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35%);
+    top: 15px;
+}
+.history div i:nth-child(1) {
+    position: absolute;
+    top: 5px ;
+    left: 100px !important;
+    font-size: 30px;
+
+}
+.history div i ~ i {
+    position: absolute;
+    top: 5px ;
+    right: 100px !important;
+    font-size: 30px;
+} 
